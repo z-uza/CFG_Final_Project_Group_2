@@ -24,6 +24,13 @@ function App() {
           a beautiful way to start the day.  
           
         </p>
+
+        <p className='App-Para'> <span class ="App-bolded">Zuzanna: </span>My favourite thing to do is backpacking the world, 
+        I’ve been travelling and working remotely for the last two years and hope to continue! 
+        I love immersing myself in different cultures and slowly discovering a new place. 
+        I’m learning Spanish to spend some time in Central and South America. 
+        </p>
+
         <a
           className="App-link"
           href="https://github.com/"
