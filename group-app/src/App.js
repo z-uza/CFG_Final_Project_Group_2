@@ -31,7 +31,7 @@ function App() {
         I’m learning Spanish to spend some time in Central and South America. 
         </p>
 
-        <p className='App-Para'> <span class ="App-bolded">Zuzanna: </span> My favourite thing to do is running. It sounds crazy but I love both the mental and physical challenge. I completed Manchester Marathon a
+        <p className='App-Para'> <span class ="App-bolded">Beth: </span> My favourite thing to do is running. It sounds crazy but I love both the mental and physical challenge. I completed Manchester Marathon a
         few years ago and I am running the London Marathon in 2025. I am part of my local running club [St. Albans Striders] and also really enjoy the social side of it too.
         </p>
 
