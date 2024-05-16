@@ -24,6 +24,10 @@ function App() {
           a beautiful way to start the day.  
           
         </p>
+
+        <p className='App-Para'> <span class ="App-bolded">Sarah: </span> my favourite hobby is hiking. Why do I do this? I love being in nature and enjoying the beauty of the outdoors. Hiking is very relaxing and peaceful hobby.
+
+        </p>
         <a
           className="App-link"
           href="https://github.com/"
