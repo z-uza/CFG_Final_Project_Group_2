@@ -35,6 +35,9 @@ function App() {
         few years ago and I am running the London Marathon in 2025. I am part of my local running club [St. Albans Striders] and also really enjoy the social side of it too.
         </p>
 
+        <p className='App-Para'> <span class ="App-bolded">Bronwen: </span> My favourite thing to do is play volleyball, I like not only the enjoyment of winning but coming together as a team. I am also a beautiful
+        of a thrill seaker and would like to get my sky diving license in the next few years so I can do solo sky dives.
+        </p>
 
 
         <a
