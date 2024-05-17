@@ -25,6 +25,10 @@ function App() {
           
         </p>
 
+
+        <p className='App-Para'> <span class ="App-bolded">Sarah: </span> my favourite hobby is hiking. Why do I do this? I love being in nature and enjoying the beauty of the outdoors. Hiking is very relaxing and peaceful hobby.
+
+        </p>
         <p className='App-Para'> <span class ="App-bolded">Zuzanna: </span>My favourite thing to do is backpacking the world, 
         I’ve been travelling and working remotely for the last two years and hope to continue! 
         I love immersing myself in different cultures and slowly discovering a new place. 
@@ -43,6 +47,7 @@ function App() {
         to my personal training sessions which have helped to get me on the mend. I'm part of a run club and walking club and generally really love the energy movement gives me and how uplifting it is. 
         There's nothing that clears my mind faster than a long walk or trip to the gym.
         </p>
+
 
         <a
           className="App-link"
