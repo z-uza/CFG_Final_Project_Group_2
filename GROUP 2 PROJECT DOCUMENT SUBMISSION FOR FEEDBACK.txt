@@ -1,0 +1,63 @@
+Theme Park Wait Times 🏰🎡🎠🎢🎪
+Part 1 -
+1. Come up with a project idea you will all like to work on. 
+
+As a group we have decided to create a centralised hub catering primarily to those with accessibility needs to help enhance their theme-park experience. 
+
+2. Submit a document that contains details of your project such as: 
+o What is the concept/ what are you building? Think exactly about what needs to be built. 
+
+Our project aims to create a web application that improves the customer experience at theme parks. There are two main avenues we aim to take to meet this goal. 
+●	Firstly, by providing additional information about various accessibility features available and other facilities at selected theme parks. 
+●	Secondly, by accessing data from an API that informs users about the likely wait time for specific rides at the selected theme park. This is critical for those with accessibility needs.
+
+ 3. Who will this help? Who’s your target audience? 
+
+●	Those with disabilities/accessibility needs - to understand where there’s facilities in place to cater to them and make their visit as smooth as possible
+○	Currently, this information is fragmented across multiple theme-park applications and websites - our project aims to create a centralised location for this info to be easily accessed
+○	Understanding wait times is critical for those with additional needs 
+
+●	Thrill-seekers - want to maximise time spent on rides and not waiting so the application can help them plan their visit efficiently
+●	Families with young children - to help plan their day and work around various services available inc. those for young kids 
+
+4. How will you be working? What tools will help with that? 
+
+Technologies:
+●	UX/UI - Figma 
+●	Frontend -  React, CSS 
+●	Backend - ExpressJS; NodeJS (to confirm)
+●	Database - We will store accessibility info using mySQL, making API calls to this to retrieve the theme-park relevant data.
+●	API - https://queue-times.com/pages/api (free to use - just need to give credit on the application somewhere) 
+
+Work style- agile? waterfall?
+
+5. How are you going to organise the workload? Who does what and when?
+
+Please give us feedback on best way to organise this 
+
+Team member	Definition 	API 	Frontend 	Backend	Database	Git 	Read.me file	Project doc	Presentation	Review
+Sarah	x					x				x
+Zuzanna	x					x				x
+Beth	x					x				x
+Warda	x					x				x
+Majella	x					x				x
+Bronwen	x					x				x
+
+●	To update
+
+6. What are the main features of your project?
+
+Maximising Enjoyment
+●	Wait times per ride - user can filter by theme park and/or ride 
+
+Efficient Planning 
+●	Users can also check if the ride is open or not - especially if they plan to visit a park for a specific ride  - can be used as a reassurance to avoid disappointment
+●	The application should estimate how long a customer would need to go on all the rides in one day (based on wait times for all planned selected rides and opening/closing times)
+●	Allow users to favourite their favourite theme parks and/or rides - especially useful for those thrill seekers who re-visit their favourite parks and want to minimise wait times
+●	Promoting inclusion -Ensuring all can access the rides by providing information in one place to help with planning
+
+Extended functionalities (TBC)
+●	Push notifications to users about significant changes in wait times or ride closures - based on their favourite rides
+
+
+
