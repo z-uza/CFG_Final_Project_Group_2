@@ -25,9 +25,30 @@ function App() {
           
         </p>
 
+
         <p className='App-Para'> <span class ="App-bolded">Sarah: </span> my favourite hobby is hiking. Why do I do this? I love being in nature and enjoying the beauty of the outdoors. Hiking is very relaxing and peaceful hobby.
 
         </p>
+        <p className='App-Para'> <span class ="App-bolded">Zuzanna: </span>My favourite thing to do is backpacking the world, 
+        I’ve been travelling and working remotely for the last two years and hope to continue! 
+        I love immersing myself in different cultures and slowly discovering a new place. 
+        I’m learning Spanish to spend some time in Central and South America. 
+        </p>
+
+        <p className='App-Para'> <span class ="App-bolded">Beth: </span> My favourite thing to do is running. It sounds crazy but I love both the mental and physical challenge. I completed Manchester Marathon a
+        few years ago and I am running the London Marathon in 2025. I am part of my local running club [St. Albans Striders] and also really enjoy the social side of it too.
+        </p>
+
+        <p className='App-Para'> <span class ="App-bolded">Bronwen: </span> My favourite thing to do is play volleyball, I like not only the enjoyment of winning but coming together as a team. I am also a bit of a
+        thrill seaker and would like to get my sky diving license in the next few years so I can do solo sky dives.
+        </p>
+
+        <p className='App-Para'> <span class ="App-bolded">Warda: </span> My favourite thing to do is workout, and I'm an avid gym-goer. Even though I'm currently recovering from an injury I still look forward
+        to my personal training sessions which have helped to get me on the mend. I'm part of a run club and walking club and generally really love the energy movement gives me and how uplifting it is. 
+        There's nothing that clears my mind faster than a long walk or trip to the gym.
+        </p>
+
+
         <a
           className="App-link"
           href="https://github.com/"
