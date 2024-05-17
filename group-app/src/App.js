@@ -39,6 +39,10 @@ function App() {
         of a thrill seaker and would like to get my sky diving license in the next few years so I can do solo sky dives.
         </p>
 
+        <p className='App-Para'> <span class ="App-bolded">Warda: </span> My favourite thing to do is workout, and I'm an avid gym-goer. Even though I'm currently recovering from an injury I still look forward
+        to my personal training sessions which have helped to get me on the mend. I'm part of a run club and walking club and generally really love the energy movement gives me and how uplifting it is. 
+        There's nothing that clears my mind faster than a long walk or trip to the gym.
+        </p>
 
         <a
           className="App-link"
