@@ -1,0 +1,13 @@
+.ExploreButton { 
+    background-color: #B5C18E;
+    color: black;
+    width: 30%;
+    box-shadow: none;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+}
+
+.ExploreButton:hover { 
+    cursor: pointer;
+}
