@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   return (
-
+    <>
     <BrowserRouter> 
       <div className="App">
 
@@ -87,7 +87,7 @@ function App() {
         </a>
       </header>
     </div>
-
+    </>
   );
 }
 
