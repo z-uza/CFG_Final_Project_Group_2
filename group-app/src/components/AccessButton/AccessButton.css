@@ -1,0 +1,13 @@
+.AccessButton { 
+    background-color: #B5C18E;
+    color: black;
+    width: 30%;
+    box-shadow: none;
+    border-radius: 80px;
+    border: none;
+    display: inline-block;
+}
+
+.AccessButton:hover { 
+    cursor: pointer;
+}

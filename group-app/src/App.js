@@ -3,6 +3,7 @@ import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import DrawerAppBar from './components/Nav/Navigation';
 import Favourites from './components/Favourites/Favourites';
+import Access from './components/Access/Access';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -20,8 +21,10 @@ function App() {
           <Routes> 
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/about" element={<About />} />
+            <Route path="/access" element={<Access />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
+            
           </Routes>
         </div>
       </BrowserRouter> 

@@ -1,0 +1,63 @@
+h1 {
+    color: white;
+    text-align:left;
+}
+body {
+    color: white;
+    text-align:left;
+}
+p {
+    display:inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: #f9da10 solid 10px;
+    margin: 20 px;  
+    padding: 20px;
+    text-align: left;
+    color: black;
+  }
+.access-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+.access-container h1 { 
+    margin: 0; 
+    padding: 0; 
+    align-items: left;
+    color: white;
+   
+}
+
+  
+.button-container {
+    display: flex;
+    align-items: left;
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 30px;
+    margin-top: 25px;
+  }
+  
+.custom-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: left;
+  cursor: pointer;
+}
+
+.parkInfo {
+  background-color: #F0F0F0;
+}
+
+.parkAccessPic {
+  width: auto;
+  height: auto;
+}
