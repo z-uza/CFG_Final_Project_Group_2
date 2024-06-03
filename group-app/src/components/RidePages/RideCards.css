@@ -1,0 +1,17 @@
+  .custom-card {
+    width: 18rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: solid black 2px;
+    padding: 10px;
+  }
+  
+.theme-parks-container {
+    display: flex;
+}
+
+.cards-container,
+.ride-table {
+    flex: 1;
+    margin: 0 10px;
+}
