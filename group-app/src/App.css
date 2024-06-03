@@ -1,13 +1,42 @@
-/* Global styles here */
-
 .App {
   display: flex;
-  height: 100vh;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #3C486B;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App-header {
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.section-one {
+  background-color: #F9D949;
+}
+
+.section-two {
+  background-color: #F0F0F0;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensure the elements stack vertically */
+  height: 10vh; /* Adjust height as needed */
+  text-align: center;
+}
+
+.App-link {
+  color: white; 
+  text-decoration: underline; 
+  cursor: pointer; 
+  border: none; 
+}
+
+.App-link:hover, .App-link:focus, .App-link:active {
+  text-decoration: underline;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"'); */
