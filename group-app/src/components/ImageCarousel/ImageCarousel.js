@@ -8,7 +8,7 @@ const images = importAll(require.context('../../assets/main carousel images', fa
 // Need to re-size images to ensure consistency in carousel sizing
 
 const Carousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -25,11 +25,10 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    }, 3000); 
+    }, 3000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
-
 
   return (
     <div id="carousel" className="custom-carousel">
@@ -37,7 +36,7 @@ const Carousel = () => {
         <button onClick={goToPrevious} className="carousel-button left">
           &#10094;
         </button>
-        <div className="carousel-item">
+        <div className="carousel-item overlay"> {/* Added 'overlay' class here */}
           <img src={images[currentIndex]} alt="carousel" />
         </div>
         <button onClick={goToNext} className="carousel-button right">
@@ -45,8 +44,6 @@ const Carousel = () => {
         </button>
       </div>
     </div>
-
-
   );
 };
 
