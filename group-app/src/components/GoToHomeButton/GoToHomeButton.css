@@ -1,0 +1,13 @@
+.GoToHomeButton { 
+    background-color: #B5C18E;
+    color: black;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 30px;
+    border: none;
+    display: inline-block;
+}
+
+.GoToHomeButton:hover { 
+    cursor: pointer;
+}
