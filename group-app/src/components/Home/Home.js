@@ -1,7 +1,8 @@
 import React from 'react';
 import DropDown from "../DropDown/DropDown";
 import ExploreButton from "../ExploreButton/ExploreButton";
-import Carousel from '../ImageCarousel/ImageCarousel.js';
+import AccessButton from "../AccessButton/AccessButton";
+import Carousel from '../ImageCarousel/ImageCarousel.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure this is imported first
 import '../ImageCarousel/ImageCarousel.css'; // Then import your custom CSS
@@ -12,6 +13,9 @@ function Home() {
         <div className="home-container">
             <h1 className="title">Theme Park Waiting Times!</h1>
             <hr />
+            <div className="button-container">
+            <AccessButton className="custom-btn" />
+            </div>
             <Carousel />
             <div className="button-container">
                 <DropDown className="custom-btn" style={{ marginRight: '30px' }} />

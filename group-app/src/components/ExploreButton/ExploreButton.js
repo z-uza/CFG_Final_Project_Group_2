@@ -3,7 +3,7 @@ import './/ExploreButton.css'
 
 function ExploreButton() {
     return (
-        <Button variant="primary" className='ExploreButton'> Explore </Button>
+        <Button variant="primary" className='ExploreButton'> Explore Rides </Button>
         )
 }
 
