@@ -12,7 +12,6 @@ function Home() {
     return (
         <div className="home-container">
             <h1 className="title">Theme Park Waiting Times!</h1>
-            <hr />
             <div className="button-container">
             <AccessButton className="custom-btn" />
             </div>

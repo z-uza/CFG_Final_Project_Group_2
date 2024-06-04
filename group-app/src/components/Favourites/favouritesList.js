@@ -1,21 +1,31 @@
 import ListGroup from 'react-bootstrap/ListGroup';
 // import 'bootstrap/dist/css/bootstrap.css'; 
-import './favouritesList.css'
+import './FavouritesList.css'
 import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
+import AddToFavourites from './FavouritesButton';
+
+// need to get these items from local storage and show it back to the user
 
 
 function favouritesList() { // FOR LOOP - for each ride in list, create a new item 
+
+  const rides = ['Colossus', 'Thorpe Park', 'Stealth']
+
   return (
+    <>
+    <h1> Here are your favourite rides... </h1>
     <div className="custom-list"> 
     <ListGroup>
-      <ListGroup.Item className="custom-list-item">Ride 1 <button onClick={saveToFavourites}> Add To Faves </button> </ListGroup.Item>
-      <ListGroup.Item className="custom-list-item">Ride 2 <button onClick={saveToFavourites}> Add To Faves </button> </ListGroup.Item>
+      <ListGroup.Item className="custom-list-item">Ride 1 <AddToFavourites /> </ListGroup.Item>
+      <ListGroup.Item className="custom-list-item">Ride 2 </ListGroup.Item>
       <ListGroup.Item className="custom-list-item">Ride 3</ListGroup.Item>
       <ListGroup.Item className="custom-list-item">Ride 4</ListGroup.Item>
       <ListGroup.Item className="custom-list-item">Ride 5</ListGroup.Item>
     </ListGroup>
     </div>
-  );
+
+    </>
+  )
 }
 
 export default favouritesList;

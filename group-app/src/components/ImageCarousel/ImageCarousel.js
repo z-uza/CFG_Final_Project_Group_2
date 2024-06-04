@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './ImageCarousel.css';
 
-// Import images from assets folder
-const importAll = (requireContext) => requireContext.keys().map(requireContext);
-const images = importAll(require.context('../../assets/main carousel images', false, /\.(png|jpe?g|svg)$/));
+import CH_Img2 from '../../assets/main carousel images/CH_Img2.jpg' 
+import CH_Img3 from '../../assets/main carousel images/CH_Img3.jpg'
+import CH_Img4 from '../../assets/main carousel images/CH_Img4.webp'
+import LEGO_Img1 from '../../assets/main carousel images/LEGO_Img1.jpg'
+import LEGO_Img4 from '../../assets/main carousel images/LEGO_Img4.jpg'
+import THORPE_Img2 from '../../assets/main carousel images/THORPE_Img2.jpg'
+import THORPE_Img3 from '../../assets/main carousel images/THORPE_Img3.jpg'
+
+export const images = [CH_Img2,CH_Img3,CH_Img4,LEGO_Img1,LEGO_Img4,THORPE_Img2,THORPE_Img3]
 
 // Need to re-size images to ensure consistency in carousel sizing
 
@@ -36,7 +42,7 @@ const Carousel = () => {
         <button onClick={goToPrevious} className="carousel-button left">
           &#10094;
         </button>
-        <div className="carousel-item overlay"> {/* Added 'overlay' class here */}
+        <div className="carousel-item overlay"> 
           <img src={images[currentIndex]} alt="carousel" />
         </div>
         <button onClick={goToNext} className="carousel-button right">

@@ -1,13 +1,11 @@
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Home from './components/Home/Home'
 import Rides from './components/RidePages/Rides';
 import Home from './components/Home/Home';
 import DrawerAppBar from './components/Nav/Navigation';
-import Favourites from './components/Favourites/Favourites';
 import Access from './components/Access/Access';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FavouritesList from './components/Favourites/FavouritesList';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/DropDown/DropDown.css';
@@ -21,12 +19,11 @@ function App() {
         <div className="App">
           <DrawerAppBar /> 
           <Routes> 
-            <Route path="/favourites" element={<Favourites />} />
+            <Route path="/favourites" element={<FavouritesList />} />
             <Route path="/about" element={<About />} />
             <Route path="/access" element={<Access />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
-            
           </Routes>
         </div>
       </BrowserRouter> 

@@ -1,0 +1,13 @@
+.btn-container { 
+    background-color: grey;
+    width: 20%;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
