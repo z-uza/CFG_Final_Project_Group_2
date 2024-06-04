@@ -5,7 +5,6 @@ import ThemeParks from './components/RidePages/Rides'; // Ensure the path is cor
 import DrawerAppBar from './components/Nav/Navigation';
 import Favourites from './components/Favourites/Favourites';
 import Access from './components/Access/Access';
-import ThemeParks from './components/RidePages/Rides'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -31,16 +30,6 @@ function App() {
       </BrowserRouter>
       <div className="App">
         <header className="App-header">
-          <div className="centered-container">
-            <a
-              className="App-link"
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Find us on GitHub
-            </a>
-          </div>
           <div className="centered-container">
             <a
               className="App-link"
