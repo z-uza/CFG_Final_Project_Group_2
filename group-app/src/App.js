@@ -1,5 +1,7 @@
+import React from 'react';
 import About from './components/About/About';
 import Home from './components/Home/Home';
+import ThemeParks from './components/RidePages/Rides'; // Ensure the path is correct
 import DrawerAppBar from './components/Nav/Navigation';
 import Favourites from './components/Favourites/Favourites';
 import Access from './components/Access/Access';
@@ -9,16 +11,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/DropDown/DropDown.css';
-import './components/ImageCarousel/ImageCarousel.css'; 
+import './components/ImageCarousel/ImageCarousel.css';
 import './App.css';
 
 function App() {
   return (
     <>
-      <BrowserRouter> 
+      <BrowserRouter>
         <div className="App">
-          <DrawerAppBar /> 
-          <Routes> 
+          <DrawerAppBar />
+          <Routes>
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/about" element={<About />} />
             <Route path="/access" element={<Access />} />
@@ -26,10 +28,19 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
-      </BrowserRouter> 
-
+      </BrowserRouter>
       <div className="App">
         <header className="App-header">
+          <div className="centered-container">
+            <a
+              className="App-link"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Find us on GitHub
+            </a>
+          </div>
           <div className="centered-container">
             <a
               className="App-link"
@@ -47,3 +58,4 @@ function App() {
 }
 
 export default App;
+
