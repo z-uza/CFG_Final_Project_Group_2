@@ -1,0 +1,4 @@
+Component rendering: Ensure that the component renders correctly under different conditions.
+State and props: Test the state changes and the props being received.
+Event handling: Check if the events (like click, and input change) are handled correctly.
+Lifecycle methods: Validate if the lifecycle methods are working as expected.

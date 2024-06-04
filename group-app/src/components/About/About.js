@@ -7,6 +7,15 @@ import TeamCards from './TeamCards';
 import './About.css'
 
 function About() {
+    const teamMembers = [
+        { name: 'Beth', image: '../../assets/Team Images/Beth.png'},
+        { name: 'Bronwen', image: '../../assets/Team Images/Majella.png' },
+        { name: 'Majella', image: '../../assets/Team Images/Bronwen.png' },
+        { name: 'Sarah', image: '../../assets/Team Images/Bronwen.png' },
+        { name: 'Warda', image: '../../assets/Team Images/Bronwen.png' },
+        { name: 'Zuzanna', image: '../../assets/Team Images/Bronwen.png' },
+    ];
+
     return (
         <div className="cards-container"> 
         <TeamCards 
@@ -26,26 +35,8 @@ function About() {
         imgSrc={BronwenImage}
         text="Need to decide what to put here"
         buttonText="github link?" />
-
-        <TeamCards 
-        title="Zuza" 
-        imgSrc={ZuzaImage}
-        text="Need to decide what to put here"
-        buttonText="github link?" />
-
-        <TeamCards 
-        title="Sarah" 
-        imgSrc=""
-        text="Need to decide what to put here"
-        buttonText="github link?" /> 
-
-        <TeamCards 
-        title="Warda" 
-        imgSrc=""
-        text="Need to decide what to put here"
-        buttonText="github link?" /> 
         </div>
-    )
+    );
 }
 
 export default About;
