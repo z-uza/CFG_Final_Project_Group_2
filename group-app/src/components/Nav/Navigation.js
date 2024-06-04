@@ -20,7 +20,7 @@ import themeparkImage from '../../assets/Logos/themepark.png';
 import './Navigation.css'
 
 const drawerWidth = 240;
-const navItems = ['Favourites', 'About', 'Contact'];
+const navItems = ['Favourites', 'About'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -114,4 +114,3 @@ DrawerAppBar.propTypes = {
 };
 
 export default DrawerAppBar;
-
