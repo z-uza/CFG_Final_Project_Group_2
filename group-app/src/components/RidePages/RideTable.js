@@ -15,7 +15,7 @@ const RideTable = ({ rides }) => {
                     {rides.map((ride, index) => (
                         <TableRow key={index}>
                             <TableCell>{ride.name}</TableCell>
-                            <TableCell>{ride.waitTime}</TableCell>
+                            <TableCell>{ride.waitTime} minutes</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

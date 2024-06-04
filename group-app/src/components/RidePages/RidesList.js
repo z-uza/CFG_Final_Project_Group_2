@@ -15,5 +15,3 @@ function RideList({ rides }) {
     </div>
   );
 }
-
-export default RideList;
