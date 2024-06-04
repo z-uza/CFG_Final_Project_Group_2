@@ -1,4 +1,4 @@
-import RideImage from '../../assets//main carousel images/LEGO_Img1.jpg';
+import RideImage from '../../assets//main carousel images/LEGO_Img4.jpg';
 import RideCards from './RideCards';
 import RideTable from './RideTable';
 import './RideCards.css';

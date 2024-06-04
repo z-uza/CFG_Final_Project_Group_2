@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './DropDown.css';
 
 
-function DropDown() {
+function DropDown({ value, onChange}) {
   return (
     <div id="dropdown-container">
-    <Dropdown className='custom-dropdown-menu'>
+    <Dropdown className='custom-dropdown-menu'onSelect={function(evt){onChange(evt)}}>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
         Choose theme park 
       </Dropdown.Toggle>
