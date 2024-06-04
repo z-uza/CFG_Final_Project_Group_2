@@ -1,5 +1,4 @@
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import RidePages from './components/RidePages/Rides';
 import DrawerAppBar from './components/Nav/Navigation';
@@ -23,7 +22,6 @@ function App() {
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/about" element={<About />} />
             <Route path="/access" element={<Access />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
