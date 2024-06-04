@@ -1,3 +1,5 @@
+import RideImage from '../..//assets/main carousel images/LEGO_Img4.jpg';
+import RideCards from './RideCards';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RideTable from './RideTable';

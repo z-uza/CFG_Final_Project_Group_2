@@ -1,6 +1,8 @@
 import React from 'react';
 import About from './components/About/About';
-import Home from './components/Home/Home';
+import Contact from './components/Contact/Contact';
+import Home from './components/Home/Home'
+import Rides from './components/RidePages/Rides';
 import ThemeParks from './components/RidePages/Rides'; // Ensure the path is correct
 import DrawerAppBar from './components/Nav/Navigation';
 import Favourites from './components/Favourites/Favourites';
