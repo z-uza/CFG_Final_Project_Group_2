@@ -1,9 +1,9 @@
 import About from './components/About/About';
 import Home from './components/Home/Home';
-import RidePages from './components/RidePages/Rides';
 import DrawerAppBar from './components/Nav/Navigation';
 import Favourites from './components/Favourites/Favourites';
 import Access from './components/Access/Access';
+import ThemeParks from './components/RidePages/Rides'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -22,6 +22,7 @@ function App() {
             <Route path="/favourites" element={<Favourites />} />
             <Route path="/about" element={<About />} />
             <Route path="/access" element={<Access />} />
+            <Route path="/theme-parks/:themePark" element={<ThemeParks />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
