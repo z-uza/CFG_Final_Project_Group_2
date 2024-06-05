@@ -1,11 +1,13 @@
 .AccessButton { 
-    background-color: #B5C18E;
+    background-color:#B5C18Eab;
     color: black;
     width: 30%;
     box-shadow: none;
     border-radius: 80px;
     border: none;
     display: inline-block;
+    font-weight:bold;
+    font-size:large;
 }
 
 .AccessButton:hover { 

@@ -1,6 +1,5 @@
 import React from 'react';
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home'
 import Rides from './components/RidePages/Rides';
 import ThemeParks from './components/RidePages/Rides'; // Ensure the path is correct
@@ -30,20 +29,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-      <div className="App">
-        <header className="App-header">
-          <div className="centered-container">
-            <a
-              className="App-link"
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Find us on GitHub
-            </a>
-          </div>
-        </header>
-      </div>
+      
     </>
   );
 }

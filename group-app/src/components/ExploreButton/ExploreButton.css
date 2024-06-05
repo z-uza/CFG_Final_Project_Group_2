@@ -6,6 +6,7 @@
     border-radius: 10px;
     border: none;
     display: inline-block;
+    font-weight:bold;
 }
 
 .ExploreButton:hover { 
