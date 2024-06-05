@@ -75,7 +75,7 @@ ul {
   font-weight: bold;
 }
 .parkAccessPic {
-  width: auto;
-  height: auto;
+  width: 500px;
+  height: 400px;
   display: inline-block;
 }
