@@ -22,8 +22,8 @@ p {
     display:inline-block;
     border: 2px solid white;
     border-radius: 5px;
-    outline: #f9da10 solid 10px;
-    margin: 120 px;  
+    outline: #f9da10 solid 0px;
+    margin: 20 px;
     padding: 20px;
     text-align: left;
     color: black;
