@@ -1,6 +1,25 @@
 .title {
   padding-top: 20px;
 }
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
 
 .home-container {
   display: flex;

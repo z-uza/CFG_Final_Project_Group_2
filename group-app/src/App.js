@@ -29,20 +29,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-      <div className="App">
-        <header className="App-header">
-          <div className="centered-container">
-            <a
-              className="App-link"
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Find us on GitHub
-            </a>
-          </div>
-        </header>
-      </div>
+      
     </>
   );
 }

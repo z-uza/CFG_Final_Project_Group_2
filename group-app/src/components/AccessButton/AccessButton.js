@@ -9,7 +9,7 @@ function AccessButton() {
         navigate(path);
         }
     return (
-        <Button variant="primary" className='AccessButton' onClick={routeChange}> Accessibility </Button>
+        <Button variant="primary" className='AccessButton' onClick={routeChange}> Theme Park Accessibility </Button>
         )
 }
 
