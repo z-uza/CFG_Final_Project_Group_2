@@ -1,0 +1,28 @@
+.custom-card {
+  width: 18rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: solid black 2px;
+  padding: 10px;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.theme-parks-container {
+  display: flex;
+  flex-direction: column; /* Change to column for stacking elements */
+  align-items: center; /* Center align items */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.ride-table {
+  width: 100%; /* Full width for better table display */
+  max-width: 800px; /* Limit max width for readability */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
