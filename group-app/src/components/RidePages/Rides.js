@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RideTable from './RideTable';
-import RideCards from './RideCards';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './RideCards.css';
 
 const ThemeParks = () => {
   const { themePark } = useParams();

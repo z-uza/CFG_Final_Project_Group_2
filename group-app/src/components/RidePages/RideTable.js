@@ -1,4 +1,3 @@
-import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import AddToFavourites from '../Favourites/FavouritesButton';
 import './RideTable.css'

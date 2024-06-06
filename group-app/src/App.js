@@ -1,7 +1,6 @@
 import React from 'react';
 import About from './components/About/About';
-import Rides from './components/RidePages/Rides';
-import ThemeParks from './components/RidePages/Rides'; // Ensure the path is correct
+import ThemeParks from './components/RidePages/Rides'; 
 import NavBar from './components/Nav/Navigation';
 import Access from './components/Access/Access';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
