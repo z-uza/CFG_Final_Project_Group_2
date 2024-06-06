@@ -4,8 +4,8 @@ import RideTable from './RideTable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ThemeParks = () => {
-  const { themePark } = useParams();
-  const [waitTimes, setWaitTimes] = useState([]);
+  const { themePark } = useParams(); 
+  const [waitTimes, setWaitTimes] = useState([]); // initialise state
   
   const [favourites, setFavourites] = useState(() => {
     const storedFavourites = localStorage.getItem('favourites');
@@ -13,7 +13,7 @@ const ThemeParks = () => {
       try {
         return JSON.parse(storedFavourites);
       } catch (error) {
-        console.error('Error parsing favourites from localStorage', error);
+        console.error('Error retrieving favourites from localStorage', error);
         return [];
       }
     }
@@ -21,7 +21,7 @@ const ThemeParks = () => {
   });
 
   useEffect(() => {
-    if (themePark) {
+    if (themePark) { // runs if themePark changes
       fetchWaitTimes(themePark);
     }
   }, [themePark]);
@@ -29,7 +29,6 @@ const ThemeParks = () => {
   useEffect(() => {
     try {
       localStorage.setItem('favourites', JSON.stringify(favourites));
-      console.log('Saved Favourites:', favourites); // Debugging log
     } catch (error) {
       console.error('Error saving favourites to localStorage', error);
     }
@@ -53,7 +52,7 @@ const ThemeParks = () => {
     }
     
     try {
-      const response = await fetch(`http://localhost:5000/getData?id=${parkId}`); 
+      const response = await fetch(`http://localhost:5000/get-rides?id=${parkId}`);  // corresponds to Express server route
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

@@ -5,14 +5,14 @@ import fetch from 'node-fetch';
 const PORT = 5000;
 const app = express();
 
-app.use(cors()); // use CORS middleware
+app.use(cors()); // use CORS middleware to allow requests from any origin 
 const corsOptions = {
     origin: "http://localhost:3000" // this is the our browswer URL 
 };
 
 const baseURL = 'https://queue-times.com/parks'; 
 
-app.get('/get-rides', cors(corsOptions), async (req, res) => {
+app.get('/get-rides', cors(corsOptions), async (req, res) => { // defines GET route and applies CORS options to it 
     const parkId = req.query.id
 
     if (!parkId) {
@@ -40,6 +40,6 @@ app.get('/get-rides', cors(corsOptions), async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, () => { // starts server
     console.log(`Example app listening at http://localhost:${PORT}`);
 });
