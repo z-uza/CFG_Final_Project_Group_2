@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RenderFavouriteRides from './FavouritesList';
+import RenderFavouriteRides from './favouritesList';
 
 const RetrieveFavourites = () => {
   const [favourites, setFavourites] = useState([]); // initialise state of favourites as an empty array
