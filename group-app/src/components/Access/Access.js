@@ -15,8 +15,9 @@ function Access() {
   //when change drop down will change variable
   //if statements with dropdown display id
     return (
-      <div> 
+      <div className="access-container">
         <div>
+               
         <h1> Theme Park Accessibility </h1>
         </div>
         <div className="button-container">
@@ -52,6 +53,7 @@ function Access() {
               <li>Sat to Sun: 10 am to 6 pm </li>
           </ul>
           </p>
+          <img className="parkAccessPic" src={require("../../assets/main carousel images/THORPE_Img3.jpg")} alt={"ride at thorpe park"}/>
           </div>
        }
        {currentThemePark==="3" &&            
@@ -72,17 +74,22 @@ function Access() {
          <li>Assistance dogs welcome</li>
        </ul>
      </p>
+     
      <p id="chessingtonAddressTimes" class="parkInfo">
-     <ul>Chessington Sat Nav Address:
-         <li>Chessington World of Adventures Resort, Leatherhead Road</li>
-         <li>Chessington, Surrey, KT9 2NE</li>
-     </ul>
-     <ul>Opening Times:
+       Chessington Sat Nav Address:<br/>
+             Chessington World of Adventures Resort <br/>
+             Leatherhead Road <br/>
+             Chessington <br/>
+             Surrey <br/>
+             KT9 2NE<br/>
+        <br/> 
+         
+     <ul>Chessington Opening Times:
          <li>Sun to Fri: 10 am to 5 pm </li>
          <li>Sat: 10 am to 6 pm </li>
      </ul>
      </p>
-     <img src ="\assets\main carousel images\CH_Img4.webp" alt = "rollercoaster at Chessington" class="parkAccessPic"/>
+     <img className="parkAccessPic" src={require("../../assets/main carousel images/CH_Img3.jpg")} alt={"rollercoaster at Chessington"} />
      </div>
        }
        {currentThemePark==="1" && 
@@ -121,6 +128,7 @@ function Access() {
             <li>Sat to Sun: 10 am to 6 pm </li>
         </ul>
         </p>
+        <img className="parkAccessPic" src={require("../../assets/main carousel images/LEGO_Img4.jpg")} alt={"family at LegoLand"} />
         </div>
        }
         </div>

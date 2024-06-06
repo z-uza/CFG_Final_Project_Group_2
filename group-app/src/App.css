@@ -1,3 +1,4 @@
+
 .App {
   display: flex;
   flex-direction: column;
@@ -13,19 +14,26 @@
 
 .section-one {
   background-color: #F9D949;
+ 
 }
 
+h1{
+  color:#3C486B
+}
 .section-two {
   background-color: #F0F0F0;
+ 
 }
 
 .centered-container {
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Ensure the elements stack vertically */
-  height: 10vh; /* Adjust height as needed */
+  flex-direction: column;  /* Ensure the elements stack vertically */
+  height:10vh; /* Adjust height as needed */
   text-align: center;
+ 
 }
 
 .App-link {

@@ -1,7 +1,9 @@
 import React from 'react';
 import About from './components/About/About';
-import ThemeParks from './components/RidePages/Rides'; 
+import Home from './components/Home/Home'
+import ThemeParks from './components/RidePages/Rides'; // Ensure the path is correct
 import NavBar from './components/Nav/Navigation';
+import DrawerAppBar from './components/Nav/Navigation';
 import Access from './components/Access/Access';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home/Home'
@@ -28,20 +30,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-      <div className="App">
-        <header className="App-header">
-          <div className="centered-container">
-            <a
-              className="App-link"
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Find us on GitHub
-            </a>
-          </div>
-        </header>
-      </div>
+      
     </>
   );
 }

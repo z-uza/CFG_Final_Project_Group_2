@@ -25,9 +25,6 @@ function Home() {
     <div className="home-container">
       <h1 className="title">Theme Park Waiting Times!</h1>
       <hr />
-      <div className="button-container">
-        <AccessButton className="custom-btn" />
-      </div>
       <Carousel />
       <div className="button-container">
         <DropDown className="custom-btn" style={{ marginRight: '30px' }} onSelectThemePark={(eventKey) => {
@@ -36,6 +33,17 @@ function Home() {
         }} />
         <ExploreButton className="custom-btn" onClick={handleExploreClick} />
       </div>
+        <div class="grid-container">
+            <div class="grid-item item5">
+            <p>A trip to a Theme Park should be a fun day out for everyone including disabled visitors and people with additional needs.
+                You can check the latest information on Theme Park facilities and support services for accessibility and inclusion here.
+                We hope you have a brilliant day out! </p>
+            <div className="button-container">
+            <AccessButton className="custom-btn" />
+            </div>
+            </div>
+                
+        </div>
     </div>
   );
 }
