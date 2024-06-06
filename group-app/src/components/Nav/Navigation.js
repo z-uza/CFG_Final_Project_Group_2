@@ -22,18 +22,18 @@ import './Navigation.css'
 const drawerWidth = 240;
 const navItems = ['Favourites', 'About'];
 
-function DrawerAppBar(props) {
+function NavBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const userLocation = useLocation(); // Use useLocation to get the current path
+  const location = useLocation(); // Use useLocation to get the current path
 
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
-  // Check if user is on home page - if not, add 'Home' pathway to nav bar
-  const modifiedNavItems = userLocation.pathname !== '/' ? ['Home', ...navItems] : navItems;
+  // Check if user is on home page - if not, add 'Home' pathway to nav bar so user can go back home
+  const modifiedNavItems = location.pathname !== '/' ? ['Home', ...navItems] : navItems;
 
 
   const drawer = (
@@ -109,8 +109,8 @@ function DrawerAppBar(props) {
   );
 }
 
-DrawerAppBar.propTypes = {
+NavBar.propTypes = {
   window: PropTypes.func,
 };
 
-export default DrawerAppBar;
+export default NavBar;

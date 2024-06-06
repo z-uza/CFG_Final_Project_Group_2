@@ -1,14 +1,21 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import AddToFavourites from '../Favourites/FavouritesButton';
+import './RideTable.css'
 
-const RideTable = ({ rides }) => {
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
+
+const RideTable = ({ rides, addToFavourites }) => {
     return (
-        <TableContainer component={Paper}>
-            <Table>
+        <TableContainer component={Paper} className="ride-table-container">
+            <Table sx={{ minWidth: 650 }}>
                 <TableHead>
-                    <TableRow>
+                    <TableRow className="ride-rows">
                         <TableCell>Ride Name</TableCell>
                         <TableCell>Wait Time</TableCell>
+                        <TableCell> Status </TableCell>
+                        <TableCell>Favourite</TableCell>
+
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -16,6 +23,20 @@ const RideTable = ({ rides }) => {
                         <TableRow key={index}>
                             <TableCell>{ride.name}</TableCell>
                             <TableCell>{ride.waitTime} minutes</TableCell>
+                            <TableCell>
+                                {ride.isOpen ? (
+                                    <>
+                                Open <AiFillCheckCircle color="green" />
+                                    </>
+                                ) : (
+                                    <>
+                                Closed <AiFillCloseCircle color="red" />
+                                    </>
+                                )}
+                            </TableCell>
+                            <TableCell>
+                                <AddToFavourites rideName={ride.name} addToFavourites={addToFavourites} />
+                            </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
@@ -25,3 +46,4 @@ const RideTable = ({ rides }) => {
 }
 
 export default RideTable;
+

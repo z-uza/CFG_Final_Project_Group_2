@@ -11,10 +11,8 @@ import THORPE_Img3 from '../../assets/main carousel images/THORPE_Img3.jpg'
 
 export const images = [CH_Img2,CH_Img3,CH_Img4,LEGO_Img1,LEGO_Img4,THORPE_Img2,THORPE_Img3]
 
-// Need to re-size images to ensure consistency in carousel sizing
-
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // set initial state to zero
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -46,7 +44,6 @@ const Carousel = () => {
           <img src={images[currentIndex]} alt="carousel" />
         </div>
         <button onClick={goToNext} className="carousel-button right">
-          &#10095;
         </button>
       </div>
     </div>

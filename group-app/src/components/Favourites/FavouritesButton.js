@@ -1,22 +1,34 @@
-import React from 'react'; 
-import { TiHeartFullOutline } from "react-icons/ti";
+import React, { useState, useEffect } from 'react';
+import { TiHeartFullOutline } from 'react-icons/ti';
+import './FavouritesButton.css';
 
-import { useLocalStorage } from 'usehooks-ts' // custom hook from lib
-import './FavouritesButton.css'
 
-function AddToFavourites({rideName}) {
+const AddToFavourites = ({ rideName, addToFavourites }) => { // pass in rideName and the addToFavourites function 
+  const [isFavourite, setAsFavourite] = useState(
+    JSON.parse(localStorage.getItem(`favourite-${rideName}`) || false // initiliase use state with either the favourited ride or false if no favourite
+  ));
 
-  const [favourites, setFavourites] = useLocalStorage('favourites', []); 
+  const manageAddToFavourites = () => { // handles adding new ride to favourites
+    addToFavourites(rideName)
+    setAsFavourite(true); // update state to true
+    localStorage.setItem(`favourite-${rideName}`, true);
+  }
 
-  const addToFavourites = () => { // this will update the state
-    setFavourites([...favourites, rideName]);
-  };
+  useEffect(() => {
+    localStorage.setItem(`favourite-${rideName}`, isFavourite); // update local storage with current value of isFavourite
+  }, [isFavourite, rideName]);
 
   return (
-    <div class="btn-container">
-      <button onClick={addToFavourites}> <TiHeartFullOutline color="red" size="30px"/> Add to Favourites</button>
-    </div>
-  );
-}
+    <div className='btn-container'>
+      <button
+        onClick={manageAddToFavourites}
+        className={`btn-main ${isFavourite ? 'added' : ''}`}
+        disabled={isFavourite}>
+        <TiHeartFullOutline color={isFavourite ? 'red' : 'black'} size="25px" /> 
+        {isFavourite ? 'Added' : 'Add to Favourites'}
+      </button>
+      </div>
+  )};
 
 export default AddToFavourites;
+
