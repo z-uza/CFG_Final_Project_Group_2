@@ -1,6 +1,6 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-import './FavouritesList.css'
+import './favouritesList.css'
 import { TiHeartFullOutline } from "react-icons/ti";
 
 const RenderFavouriteRides = ({ favourites }) => { // pass in favourites
