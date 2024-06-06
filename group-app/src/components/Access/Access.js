@@ -6,8 +6,8 @@ import AccessButton from "../AccessButton/AccessButton";
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure this is imported first
 import './Access.css'
-const importAll = (requireContext) => requireContext.keys().map(requireContext);
-const images = importAll(require.context('../../assets/main carousel images', false, /\.(png|jpe?g|svg)$/));
+// const importAll = (requireContext) => requireContext.keys().map(requireContext);
+// const images = importAll(require.context('../../assets/main carousel images', false, /\.(png|jpe?g|svg)$/));
 
 function Access() {
   const [currentThemePark, setCurrentThemePark] = useState('');

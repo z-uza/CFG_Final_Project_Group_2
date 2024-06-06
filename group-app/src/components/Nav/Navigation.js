@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -16,24 +15,25 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import themeparkImage from '../../assets/Logos/themepark.png';
 import './Navigation.css'
 
 const drawerWidth = 240;
 const navItems = ['Favourites', 'About'];
 
-function DrawerAppBar(props) {
+function NavBar(props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const userLocation = useLocation(); // Use useLocation to get the current path
+  const [mobileOpen, setMobileOpen] = useState(false); // for mobile
+  const location = useLocation(); // Use useLocation to get the current URL path
 
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
-  // Check if user is on home page - if not, add 'Home' pathway to nav bar
-  const modifiedNavItems = userLocation.pathname !== '/' ? ['Home', ...navItems] : navItems;
+  // Check if user is on home page - if not, add 'Home' pathway to nav bar array so user can go back home
+  const modifiedNavItems = location.pathname !== '/' && location.pathname !== '/home' ? ['Home', ...navItems] : navItems;
 
 
   const drawer = (
@@ -58,7 +58,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" className="nav-bar-custom">
+      <AppBar component="nav" className="nav-bar-custom" data-testid="main-nav">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -78,7 +78,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {modifiedNavItems.map((item) => (
-              <Button key={item} component={Link} to={`/${item.toLowerCase()}`} className="nav-button">
+              <Button key={item} component={Link} to={`/${item.toLowerCase()}`} className="nav-button" data-testid={`nav-item-${item.toLowerCase()}`}>
                 {item}
               </Button>
             ))}
@@ -109,8 +109,5 @@ function DrawerAppBar(props) {
   );
 }
 
-DrawerAppBar.propTypes = {
-  window: PropTypes.func,
-};
 
-export default DrawerAppBar;
+export default NavBar;

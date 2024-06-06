@@ -1,13 +1,9 @@
 .custom-list { 
-    width: 75vw;
     height: 75vh;
     margin-top: 20px;
 }
 
-
 .custom-list-item { 
     padding: 20px;
     margin: 5px;
-    box-shadow: none;
-    font-weight: bold;
 }

@@ -1,23 +1,29 @@
+import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-// import 'bootstrap/dist/css/bootstrap.css'; 
-import './favouritesList.css'
+import './FavouritesList.css'
+import { TiHeartFullOutline } from "react-icons/ti";
 
-
-function favouritesList() {
+const RenderFavouriteRides = ({ favourites }) => { // pass in favourites
   return (
-    <div className="custom-list"> 
-    <ListGroup>
-      <ListGroup.Item className="custom-list-item">Ride 1</ListGroup.Item>
-      <ListGroup.Item className="custom-list-item">Ride 2</ListGroup.Item>
-      <ListGroup.Item className="custom-list-item">Ride 3</ListGroup.Item>
-      <ListGroup.Item className="custom-list-item">Ride 4</ListGroup.Item>
-      <ListGroup.Item className="custom-list-item">Ride 5</ListGroup.Item>
-    </ListGroup>
-    </div>
+    <>
+      <h1> Here are your favourite rides... </h1>
+      <div className="custom-list">
+        <ListGroup>
+          {favourites.length > 0 ? ( 
+            favourites.map((rideName, index) => (
+              <ListGroup.Item key={index} className="custom-list-item">
+                <TiHeartFullOutline color="red" size="30px" /> {rideName}
+              </ListGroup.Item>
+            ))
+          ) : (
+            <ListGroup.Item className="custom-list-item">
+              No favourites added yet.
+            </ListGroup.Item>
+          )}
+        </ListGroup>
+      </div>
+    </>
   );
-}
+};
 
-export default favouritesList;
-
-// Need to make this dynamic based on saved rides by the user... 
-// Use local storage to show saved rides  
+export default RenderFavouriteRides;
