@@ -10,7 +10,7 @@ const RetrieveFavourites = () => {
     setFavourites(savedFavourites)// re-set the favourites state with them
     } else {
     setFavourites([]); // if its empty, just have an empty array
-    }})
+    }}, [])
 
   return ( // passing favourites from local storage down into the favouritelist component as a prop so they can be rendered in the Favourites table
     <div> 

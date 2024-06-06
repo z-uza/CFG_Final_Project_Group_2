@@ -12,21 +12,21 @@ import THORPE_Img3 from '../../assets/main carousel images/THORPE_Img3.jpg'
 export const images = [CH_Img2,CH_Img3,CH_Img4,LEGO_Img1,LEGO_Img4,THORPE_Img2,THORPE_Img3]
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0); // set initial state to zero
+  const [currentIndex, setCurrentIndex] = useState(0); // set initial index state to zero
 
-  const goToPrevious = () => {
+  const goToPrevious = () => { // for navigation of the carousel
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
+    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1; // if first slide, go to last image
+    setCurrentIndex(newIndex); // update current index state
   };
 
   const goToNext = () => {
-    const isLastSlide = currentIndex === images.length - 1;
+    const isLastSlide = currentIndex === images.length - 1; // if last image, go to first image
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+    setCurrentIndex(newIndex); // update current index state
   };
 
-  useEffect(() => {
+  useEffect(() => { // handles automatic image transition
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
     }, 3000);
@@ -38,7 +38,6 @@ const Carousel = () => {
     <div id="carousel" className="custom-carousel">
       <div className="carousel-inner">
         <button onClick={goToPrevious} className="carousel-button left">
-          &#10094;
         </button>
         <div className="carousel-item overlay"> 
           <img src={images[currentIndex]} alt="carousel" />

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -16,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import themeparkImage from '../../assets/Logos/themepark.png';
 import './Navigation.css'
 
@@ -24,15 +24,15 @@ const navItems = ['Favourites', 'About'];
 
 function NavBar(props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const location = useLocation(); // Use useLocation to get the current path
+  const [mobileOpen, setMobileOpen] = useState(false); // for mobile
+  const location = useLocation(); // Use useLocation to get the current URL path
 
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
-  // Check if user is on home page - if not, add 'Home' pathway to nav bar so user can go back home
+  // Check if user is on home page - if not, add 'Home' pathway to nav bar array so user can go back home
   const modifiedNavItems = location.pathname !== '/' ? ['Home', ...navItems] : navItems;
 
 
@@ -109,8 +109,5 @@ function NavBar(props) {
   );
 }
 
-NavBar.propTypes = {
-  window: PropTypes.func,
-};
 
 export default NavBar;
