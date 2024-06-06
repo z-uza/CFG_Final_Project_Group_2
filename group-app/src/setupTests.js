@@ -10,3 +10,4 @@ import '@testing-library/jest-dom';
       "^components/(.*)$"; "<rootDir>/src/components/$1"
     }
 }
+

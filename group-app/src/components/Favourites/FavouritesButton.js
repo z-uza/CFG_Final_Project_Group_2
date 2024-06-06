@@ -3,19 +3,19 @@ import { TiHeartFullOutline } from 'react-icons/ti';
 import './FavouritesButton.css';
 
 
-const AddToFavourites = ({ rideName, addToFavourites }) => { // pass in rideName and the addToFavourites function 
+const AddToFavouritesBtn = ({ rideName, addToFavourites }) => { // pass in rideName and the addToFavourites function 
   const [isFavourite, setAsFavourite] = useState(
-    JSON.parse(localStorage.getItem(`favourite-${rideName}`) || false // initiliase use state with either the favourited ride or false if no favourite
-  ));
+    JSON.parse(localStorage.getItem(`favourite-${rideName}`)) || false // initiliase use state with either the favourited ride or false if no favourite
+  );
 
-  const manageAddToFavourites = () => { // handles adding new ride to favourites
+  const manageAddToFavourites = () => { // handles adding new ride to favourites -- helper function
     addToFavourites(rideName)
     setAsFavourite(true); // update state to true
     localStorage.setItem(`favourite-${rideName}`, true);
   }
 
   useEffect(() => {
-    localStorage.setItem(`favourite-${rideName}`, isFavourite); // update local storage with current value of isFavourite
+    localStorage.setItem(`favourite-${rideName}`, JSON.stringify(isFavourite)); // update local storage with current value of isFavourite
   }, [isFavourite, rideName]);
 
   return (
@@ -30,5 +30,5 @@ const AddToFavourites = ({ rideName, addToFavourites }) => { // pass in rideName
       </div>
   )};
 
-export default AddToFavourites;
+export default AddToFavouritesBtn;
 

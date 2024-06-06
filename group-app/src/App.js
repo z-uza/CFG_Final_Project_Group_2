@@ -3,7 +3,7 @@ import About from './components/About/About';
 import ThemeParks from './components/RidePages/Rides'; 
 import NavBar from './components/Nav/Navigation';
 import Access from './components/Access/Access';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home/Home'
 import RetrieveFavourites from './components/Favourites/RetrieveFavourites'
 
@@ -19,12 +19,12 @@ function App() {
         <div className="App">
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/favourites" element={<RetrieveFavourites />} />
             <Route path="/about" element={<About />} />
             <Route path="/access" element={<Access />} />
             <Route path="/theme-parks/:themePark" element={<ThemeParks />} />
-            <Route path="*" element={<Home />} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -1,39 +1,36 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { BrowserRouter, MemoryRouter } from 'react-router-dom';
-import '@testing-library/jest-dom/extend-expect';
+import React, { act } from 'react';
+import { render, screen, fireEvent, within } from '@testing-library/react';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import NavBar from '../components/Nav/Navigation';
 
-describe('NavBar Component', () => {
-  const renderWithRouter = (ui, { route = '/' } = {}) => {
-    return render(
-      <MemoryRouter initialEntries={[route]}>
-        {ui}
-      </MemoryRouter>
-    );
-  };
+const renderWithRouter = (comp, { route = '/' } = {}) => { // will default to / if no route value is specified
+  window.history.pushState({}, 'Test page', route);
 
-  test('renders Home link when not on home page', () => {
+  return render( // simulates navigation with the nav bar component
+    <MemoryRouter initialEntries={[route]}> 
+      {comp}
+    </MemoryRouter>
+  );
+};
+
+describe('Navigation bar', () => {
+  test('renders Home label in nav bar when not on home page', () => {
     renderWithRouter(<NavBar />, { route: '/favourites' });
 
-    expect(screen.queryByText(/Home/)).toBeInTheDocument();
-    expect(screen.queryByText(/Favourites/)).toBeInTheDocument();
-    expect(screen.queryByText(/About/)).toBeInTheDocument();
+    const navBar = screen.getByTestId('main-nav');
+
+    expect(within(navBar).getByTestId('nav-item-home')).toBeInTheDocument();
+    expect(within(navBar).getByTestId('nav-item-favourites')).toBeInTheDocument();
+    expect(within(navBar).getByTestId('nav-item-about')).toBeInTheDocument();
   });
 
-  test('does not render Home link when on home page', () => {
+  test('does not render Home label on nav bar when on home page', () => {
     renderWithRouter(<NavBar />, { route: '/' });
 
-    expect(screen.queryByText(/Home/i)).not.toBeInTheDocument();
-    expect(screen.getByText(/Favourites/i)).toBeInTheDocument();
-    expect(screen.getByText(/About/i)).toBeInTheDocument();
-  });
+    const navBar = screen.getByTestId('main-nav');
 
-  test('renders all navigation items correctly', () => {
-    renderWithRouter(<NavBar />, { route: '/about' });
-
-    expect(screen.getByText(/Home/i)).toBeInTheDocument();
-    expect(screen.getByText(/Favourites/i)).toBeInTheDocument();
-    expect(screen.getByText(/About/i)).toBeInTheDocument();
+    expect(within(navBar).queryByTestId('nav-item-home')).not.toBeInTheDocument();
+    expect(within(navBar).getByTestId('nav-item-favourites')).toBeInTheDocument();
+    expect(within(navBar).getByTestId('nav-item-about')).toBeInTheDocument();
   });
 });

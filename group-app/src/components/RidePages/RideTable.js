@@ -1,5 +1,5 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import AddToFavourites from '../Favourites/FavouritesButton';
+import AddToFavouritesBtn from '../Favourites/FavouritesButton';
 import './RideTable.css'
 
 import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
@@ -34,7 +34,7 @@ const RideTable = ({ rides, addToFavourites }) => {
                                 )}
                             </TableCell>
                             <TableCell>
-                                <AddToFavourites rideName={ride.name} addToFavourites={addToFavourites} />
+                                <AddToFavouritesBtn rideName={ride.name} addToFavourites={addToFavourites} />
                             </TableCell>
                         </TableRow>
                     ))}

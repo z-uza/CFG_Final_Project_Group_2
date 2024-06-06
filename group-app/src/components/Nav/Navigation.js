@@ -33,7 +33,7 @@ function NavBar(props) {
   };
 
   // Check if user is on home page - if not, add 'Home' pathway to nav bar array so user can go back home
-  const modifiedNavItems = location.pathname !== '/' ? ['Home', ...navItems] : navItems;
+  const modifiedNavItems = location.pathname !== '/' && location.pathname !== '/home' ? ['Home', ...navItems] : navItems;
 
 
   const drawer = (
@@ -58,7 +58,7 @@ function NavBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" className="nav-bar-custom">
+      <AppBar component="nav" className="nav-bar-custom" data-testid="main-nav">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -78,7 +78,7 @@ function NavBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {modifiedNavItems.map((item) => (
-              <Button key={item} component={Link} to={`/${item.toLowerCase()}`} className="nav-button">
+              <Button key={item} component={Link} to={`/${item.toLowerCase()}`} className="nav-button" data-testid={`nav-item-${item.toLowerCase()}`}>
                 {item}
               </Button>
             ))}
