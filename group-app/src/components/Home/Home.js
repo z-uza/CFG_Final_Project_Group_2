@@ -33,17 +33,16 @@ function Home() {
         }} />
         <ExploreButton className="custom-btn" onClick={handleExploreClick} />
       </div>
-        <div class="grid-container">
-            <div class="grid-item item5">
-            <p>A trip to a Theme Park should be a fun day out for everyone including disabled visitors and people with additional needs.
+      <section>
+            <div className="section-one container-fluid p-3">
+                    <p className="text-center p-4 " style={{ border: '2px solid black' }}>A trip to a Theme Park should be a fun day out for everyone including disabled visitors and people with additional needs.
                 You can check the latest information on Theme Park facilities and support services for accessibility and inclusion here.
                 We hope you have a brilliant day out! </p>
-            <div className="button-container">
-            <AccessButton className="custom-btn" />
+                <div className="button-container">
+                  <AccessButton className="custom-btn" />
+                </div>
             </div>
-            </div>
-                
-        </div>
+        </section>
     </div>
   );
 }
