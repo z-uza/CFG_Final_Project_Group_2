@@ -1,0 +1,11 @@
+.ride-table-container {
+    width: 100%; /* Ensure table container uses full width */
+    margin: 0 auto; /* Center the table container */
+  }
+  
+  .ride-rows th, .ride-rows td {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+ 

@@ -6,8 +6,8 @@ import AccessButton from "../AccessButton/AccessButton";
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure this is imported first
 import './Access.css'
-const importAll = (requireContext) => requireContext.keys().map(requireContext);
-const images = importAll(require.context('../../assets/main carousel images', false, /\.(png|jpe?g|svg)$/));
+// const importAll = (requireContext) => requireContext.keys().map(requireContext);
+// const images = importAll(require.context('../../assets/main carousel images', false, /\.(png|jpe?g|svg)$/));
 
 function Access() {
   const [currentThemePark, setCurrentThemePark] = useState('');
@@ -19,12 +19,12 @@ function Access() {
         <div>
           <h1> Theme Park Accessibility </h1>
         </div>
-        <div className="button-container">
+        <div className="button-container" style={{padding: "20px", backgroundColor:"#3C486B"}}>
           <AccessDropDown className="custom-btn" onChange={setCurrentThemePark}/>
         </div>     
         {currentThemePark==="2" &&
         <div class="row">
-          <div class="column">
+          <div class="col-md-6">
             <p id="thorpeParkInfo" class="parkInfo">
             <ul>Thorpe Park Sat Nav Address:</ul>
             <ul>THORPE PARK Resort, Staines Road,
@@ -49,14 +49,14 @@ function Access() {
               </ul>
             </p>
           </div>
-          <div class="column">
+          <div class="col-md-6">
             <img className="parkAccessPic" src={require("../../assets/main carousel images/THORPE_Img3.jpg")} alt={"ride at thorpe park"}/>
           </div>
         </div>
        }
        {currentThemePark==="3" &&            
        <div class="row">
-        <div class="column">
+        <div class="col-md-6">
           <p id="chessingtonInfo" class="parkInfo">
             <ul>Chessington Sat Nav Address:</ul>
               <ul>Chessington World of Adventures Resort
@@ -85,14 +85,14 @@ function Access() {
               </ul>
             </p>
           </div>
-          <div class="column">
+          <div class="col-md-6">
             <img className="parkAccessPic2" src={require("../../assets/main carousel images/CH_Img3.jpg")} alt={"rollercoaster at Chessington"} />
           </div>
        </div>
        }
        {currentThemePark==="1" && 
         <div class="row">
-          <div class="column">   
+          <div class="col-md-6">   
             <p id="legolandInfo" class="parkInfo">
               <ul>Legoland Sat Nav Address:</ul>
                   <ul>LegoLand Theme Park, Winkfield Road, Windsor
@@ -118,7 +118,7 @@ function Access() {
               </ul>
             </p>
           </div>  
-          <div class="column">
+          <div class="col-md-6">
             <img className="parkAccessPic3" src={require("../../assets/main carousel images/LEGO_Img4.jpg")} alt={"family at LegoLand"} />
           </div>
         </div>
