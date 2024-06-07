@@ -3,13 +3,12 @@ import './ImageCarousel.css';
 
 import CH_Img2 from '../../assets/main carousel images/CH_Img2.jpg' 
 import CH_Img3 from '../../assets/main carousel images/CH_Img3.jpg'
-import CH_Img4 from '../../assets/main carousel images/CH_Img4.webp'
 import LEGO_Img1 from '../../assets/main carousel images/LEGO_Img1.jpg'
 import LEGO_Img4 from '../../assets/main carousel images/LEGO_Img4.jpg'
 import THORPE_Img2 from '../../assets/main carousel images/THORPE_Img2.jpg'
 import THORPE_Img3 from '../../assets/main carousel images/THORPE_Img3.jpg'
 
-export const images = [CH_Img2,CH_Img3,CH_Img4,LEGO_Img1,LEGO_Img4,THORPE_Img2,THORPE_Img3]
+export const images = [CH_Img2,CH_Img3,LEGO_Img1,LEGO_Img4,THORPE_Img2,THORPE_Img3]
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // set initial index state to zero
