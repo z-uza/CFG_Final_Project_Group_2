@@ -8,7 +8,7 @@ This App allows users to plan ahead for a potential visit to a Theme Park and le
 ### Motivation 
 This project has given us the oportunity to develop and demonstrate skills and knowledge of programming languages: HTML, CSS, Javascript and JSX, experience of building components in React, Hook states, testing theory and application, gain experience with javascript runtime environment Node.js, gain experience of using agile methodologies within a team, effective team comunication and gain confidence in using Version Control Systems, such as Git(using terminal commands) and GitHub.
 
-### Project Document
+### [Project Document](Final Submission- Project Document.pdf) 
 For a deep dive into the background and strategy behind the App, take a look at the Project Document within the Project Folder.
 
 ### Software used 
