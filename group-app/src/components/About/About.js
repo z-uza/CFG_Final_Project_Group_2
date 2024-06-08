@@ -58,7 +58,7 @@ function About() {
         imgSrc={SarahImage}
         text="My favourite hobby is hiking. I love being in nature and enjoying the beauty of the outdoors"
         buttonText="GitHub Link"
-        link="Sarah Pascoe" 
+        link="https://github.com/SarahBethan" 
       />
     </div>
   );
