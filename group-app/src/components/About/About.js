@@ -4,6 +4,7 @@ import MajellaImage from '../../assets/Team Images/Majella.png';
 import BronwenImage from '../../assets/Team Images/Bronwen.png';
 import ZuzaImage from '../../assets/Team Images/Zuza.png';
 import WardaImage from '../../assets/Team Images/Warda.jpg';
+import SarahImage from '../../assets/Team Images/Sarah.jpg';
 import TeamCards from './TeamCards';
 import './About.css';
 
@@ -54,10 +55,10 @@ function About() {
 
     <TeamCards 
         title="Sarah" 
-        imgSrc={ZuzaImage}
+        imgSrc={SarahImage}
         text="My favourite hobby is hiking. I love being in nature and enjoying the beauty of the outdoors"
         buttonText="GitHub Link"
-        link="Sarah Pascoe" 
+        link="https://github.com/SarahBethan" 
       />
     </div>
   );
