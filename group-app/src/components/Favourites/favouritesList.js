@@ -1,15 +1,15 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { TiHeartFullOutline } from "react-icons/ti";
-
 import './FavouritesList.css'
+
+import { TiHeartFullOutline } from "react-icons/ti";
 
 
 const RenderFavouriteRides = ({ favourites }) => { // pass in favourites
   return (
     <>
+      <h1 className="titleFav"> Here are your favourite rides! </h1>
       <div className="container">
-      <h1> Here are your favourite rides... </h1>
         <ListGroup className="custom-list-main">
           {favourites.length > 0 ? ( 
             favourites.map((rideName, index) => (

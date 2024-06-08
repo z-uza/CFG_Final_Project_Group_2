@@ -4,8 +4,10 @@ import './RideTable.css'
 
 import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
-const RideTable = ({ rides, addToFavourites }) => {
+const RideTable = ({ rides, addToFavourites, themePark }) => {
     return (
+        <> 
+        <h1 className="ridesList"> Here are the rides for {themePark}!</h1> 
         <TableContainer component={Paper} className="ride-table-container">
             <Table sx={{ minWidth: 650 }}>
                 <TableHead>
@@ -14,7 +16,6 @@ const RideTable = ({ rides, addToFavourites }) => {
                         <TableCell>Wait Time</TableCell>
                         <TableCell> Status </TableCell>
                         <TableCell>Favourite</TableCell>
-
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -41,8 +42,9 @@ const RideTable = ({ rides, addToFavourites }) => {
                 </TableBody>
             </Table>
         </TableContainer>
+        </>
     );
-}
+                                }
 
 export default RideTable;
 

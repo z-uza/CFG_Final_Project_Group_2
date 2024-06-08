@@ -3,6 +3,14 @@ body, html {
     margin: 0;
 }
 
+.titleFav {
+    color: black;
+    margin-bottom: 20px;
+    background-color: #F9D949;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -12,24 +20,15 @@ body, html {
     text-align: center;
 }
 
-.custom-list-main {
-    margin: 50px;
-}
-
 .custom-list-item {
     padding: 20px;
     margin: 5px;
     font-weight: bold;
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    border-radius: 10px;
+    border: solid black 2px;
 }
 
-.custom-list-item:focus {
-    transform: scale(1.1); /* Scale up on focus */
-}
 
-h1.title {
-    color: white;
-    margin-bottom: 20px;
-}
+
 
 
