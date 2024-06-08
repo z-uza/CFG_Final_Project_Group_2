@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function AccessButton() {
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-        let path = `Access`; 
+        let path = `/access`; 
         navigate(path);
         }
     return (

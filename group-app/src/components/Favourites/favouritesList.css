@@ -1,9 +1,35 @@
-.custom-list { 
-    height: 75vh;
-    margin-top: 20px;
+body, html {
+    height: 100%; 
+    margin: 0;
 }
 
-.custom-list-item { 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.custom-list-main {
+    margin: 50px;
+}
+
+.custom-list-item {
     padding: 20px;
     margin: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
+
+.custom-list-item:focus {
+    transform: scale(1.1); /* Scale up on focus */
+}
+
+h1.title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+

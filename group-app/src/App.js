@@ -23,7 +23,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/favourites" element={<RetrieveFavourites />} />
             <Route path="/about" element={<About />} />
-            <Route path="/home/access" element={<Access />} />
+            <Route path="/access" element={<Access />} />
             <Route path="/theme-parks/:themePark" element={<ThemeParks />} />
           </Routes>
         </div>
