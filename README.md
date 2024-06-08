@@ -3,7 +3,7 @@ A Web App for users to use to access information about Theme Park accessibility 
 
 ## About the project
 
-This App allows users to plan ahead for a potential visit to a Theme Park and learn about support services and accessibility facilities available at selected Theme Parks.  Users can access the latest information on current wait times on all rides at the selected Theme Parks.  Knowing the wait times for rides can support user to plan their day accordingly whilst at the park. The App has been designed to be used by either individuals with disabilities and additional needs and/or accompanying carers and family members who are planning a visit. 
+This App allows users to plan ahead for a potential visit to a Theme Park and learn about support services and accessibility facilities available. Users can access the latest information on current wait times on all rides at the selected Theme Parks. Knowing the wait times for rides can support user to plan their day accordingly whilst at the park. The website has been designed to be used by either individuals with disabilities and additional needs and/or accompanying carers and family members who are planning a visit. 
 
 ### Motivation 
 This project has given us the oportunity to develop and demonstrate skills and knowledge of programming languages: HTML, CSS, Javascript and JSX, experience of building components in React, Hook states, testing theory and application, gain experience with javascript runtime environment Node.js, gain experience of using agile methodologies within a team, effective team comunication and gain confidence in using Version Control Systems, such as Git(using terminal commands) and GitHub.
@@ -24,7 +24,7 @@ For a deep dive into the background and strategy behind the App, take a look at 
 For future releases, we will add the following new features:
 - User Login and password authentication.
 - Users can be signposted directly to Access Support Teams at Theme Parks.
-- Users can acccess directions from their location to Theme Park using Google Maps
+- Users can acccess directions from their location to Theme Park using Google Maps.
 - Users can add reviews of Theme Park Accessibility Facilities for other users.
 - Users can add reviews of Theme Park Rides with disability in mind for other users.
 - Options for users to undo / edit favourites.
@@ -75,7 +75,10 @@ Previous CFG Projects:
 * Having been a QA Engineer for three years now, I love nothing more than being on the other side of the code and understanding how all the systems and applications I test come together. I come from a natural sciences educational background but have tried to nurture my passion for coding through self-learning and taking courses to help me on my journey to becoming a software developer such as the CFG Introduction to Web Development course where I was given a special award for my outstanding final project created using HTML, CSS and Bootstrap and now partaking in the full stack stream of the CFG Degree.
 
 **[Sarah Pascoe](https://github.com/SarahBethan)**
-* I am a recent History graduate with a background in archival work and museum curation, now eager to pivot into the tech industry. Currently, I am working pursuing the Code First Girls Full Stack Degree, building on the foundation I established with their Introduction to Coding course. My journey into tech has been fueled by continuos self-directed learning, and I am excited to integrate my new coding skills and unique perspective into this field. 
+* I am a recent History graduate with a background in archival work and museum curation, now eager to pivot into the tech industry. Currently, I am working pursuing the Code First Girls Full Stack Degree, building on the foundation I established with their Introduction to Coding course. My journey into tech has been fueled by continuos self-directed learning, and I am excited to integrate my new coding skills and unique perspective into this field.
+
+**[Zuzanna Wnekowska](https://github.com/z-uza)**
+* I'm an aero engineer switching to tech. I've been dabbling in design and coding for a long time and am excited to finally do a bootcamp. I learn by doing so building projects has been the perfect way to learn!.
 
 ### References
 We are grateful to the following people / organisations for their tuition, resources and guidance. Without them, this project would not be possible.
