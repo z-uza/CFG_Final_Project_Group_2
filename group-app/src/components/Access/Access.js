@@ -11,9 +11,9 @@ import './Access.css'
 
 function Access() {
   const [currentThemePark, setCurrentThemePark] = useState('');
-  //state variable insert here
+  //useState HOOK to manage component state
   //when change drop down will change variable
-  //if statements with dropdown display id
+  //conditional statements to display content based on current Theme Park state
     return (
       <div className="access-container">
         <div>
