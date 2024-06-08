@@ -72,7 +72,10 @@ Previous CFG Projects:
 * I am a career-switcher with a background in digital marketing who is looking to channel my analytical and creative problem-solving abilities into the exciting world of tech. Currently enrolled in the CFG Full Stack degree, I am acquiring foundational skills across wide range of technologies which I hope will propell me to a successful career within such a dynamic field. 
 
 **[Warda Egal](https://github.com/wardanot)**
-* Having been a QA Engineer for three years now, I love nothing more than being on the other side of the code and understanding how all the systems and applications I test come together. I come from a natural sciences educational background but have tried to nurture my passion for coding through self-learning and taking courses to help me on my journey to becoming a software developer such as the CFG Introduction to Web Development course where I was given a special award for my outstanding final project created using HTML, CSS and Bootstrap and now partaking in the full stack stream of the CFG Degree. 
+* Having been a QA Engineer for three years now, I love nothing more than being on the other side of the code and understanding how all the systems and applications I test come together. I come from a natural sciences educational background but have tried to nurture my passion for coding through self-learning and taking courses to help me on my journey to becoming a software developer such as the CFG Introduction to Web Development course where I was given a special award for my outstanding final project created using HTML, CSS and Bootstrap and now partaking in the full stack stream of the CFG Degree.
+
+**[Sarah Pascoe](https://github.com/SarahBethan)**
+* I am a recent History graduate with a background in archival work and museum curation, now eager to pivot into the tech industry. Currently, I am working pursuing the Code First Girls Full Stack Degree, building on the foundation I established with their Introduction to Coding course. My journey into tech has been fueled by continuos self-directed learning, and I am excited to integrate my new coding skills and unique perspective into this field. 
 
 ### References
 We are grateful to the following people / organisations for their tuition, resources and guidance. Without them, this project would not be possible.
