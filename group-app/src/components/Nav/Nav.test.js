@@ -1,7 +1,7 @@
 import React, { act } from 'react';
 import { render, screen, fireEvent, within } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import NavBar from '../components/Nav/Navigation';
+import NavBar from './Navigation';
 
 const renderWithRouter = (comp, { route = '/' } = {}) => { // will default to / if no route value is specified
   window.history.pushState({}, 'Test page', route);
