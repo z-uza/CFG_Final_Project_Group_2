@@ -1,6 +1,6 @@
 import { render, fireEvent,screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import AddToFavouritesBtn from '../components/Favourites/FavouritesButton';
+import AddToFavouritesBtn from './FavouritesButton';
 
 describe('AddToFavouritesBtn', () => {
   const mockRideName = 'mock ride';

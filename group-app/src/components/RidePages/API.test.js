@@ -3,8 +3,7 @@ import { render, screen, waitFor, act } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import fetchMock from 'jest-fetch-mock';
-import ThemeParks from '../components/RidePages/Rides';
-import RideTable from '../components/RidePages/RideTable';
+import ThemeParks from './Rides';
 
 fetchMock.enableMocks();
 
@@ -20,7 +19,7 @@ test('fetches and displays theme parks', async () => {
   fetch.mockResponseOnce(JSON.stringify({
     lands: [
       {
-        rides: [
+        rides: [ 
           { name: 'Ride 1', wait_time: 15, is_open: true },
           { name: 'Ride 2', wait_time: 5, is_open: false }
         ]
