@@ -3,12 +3,12 @@ A Web App for users to use to access information about Theme Park accessibility 
 
 ## About the project
 
-This App allows users to plan ahead for a potential visit to a Theme Park and learn about support services and accessibility facilities available at selected Theme Parks.  Users can access the latest information on current wait times on all rides at the selected Theme Parks.  Knowing the wait times for rides can support user to plan their day accordingly whilst at the park. The App has been designed to be used by either individuals with disabilities and additional needs and/or accompanying carers and family members who are planning a visit. 
+This App allows users to plan ahead for a potential visit to a Theme Park and learn about support services and accessibility facilities available. Users can access the latest information on current wait times on all rides at the selected Theme Parks. Knowing the wait times for rides can support user to plan their day accordingly whilst at the park. The website has been designed to be used by either individuals with disabilities and additional needs and/or accompanying carers and family members who are planning a visit. 
 
 ### Motivation 
 This project has given us the oportunity to develop and demonstrate skills and knowledge of programming languages: HTML, CSS, Javascript and JSX, experience of building components in React, Hook states, testing theory and application, gain experience with javascript runtime environment Node.js, gain experience of using agile methodologies within a team, effective team comunication and gain confidence in using Version Control Systems, such as Git(using terminal commands) and GitHub.
 
-### Project Document
+### [Project Document](https://github.com/z-uza/CFG_Final_Project_Group_2/blob/c7e59aa3693e17740d4f84b2057b45972e439f95/Final%20Submission-%20Project%20Document.pdf) 
 For a deep dive into the background and strategy behind the App, take a look at the Project Document within the Project Folder.
 
 ### Software used 
@@ -24,11 +24,12 @@ For a deep dive into the background and strategy behind the App, take a look at 
 For future releases, we will add the following new features:
 - User Login and password authentication.
 - Users can be signposted directly to Access Support Teams at Theme Parks.
-- Users can acccess directions from their location to Theme Park using Google Maps
+- Users can acccess directions from their location to Theme Park using Google Maps.
 - Users can add reviews of Theme Park Accessibility Facilities for other users.
 - Users can add reviews of Theme Park Rides with disability in mind for other users.
+- Favourites functionality to move to being more database-led.
 - Options for users to undo / edit favourites.
-- Option for users to filter theme park rides by open/close status as well as waiting time from high to low. 
+- Option for users to filter theme park rides by open/close status as well as waiting time from high to low in order to improve the user experience.
 
 ## How to install and run the project :rocket:
 1.	Clone the CFG_Final_Project_Group_2 repository to your local machine using the url [https://github.com/z-uza/CFG_Final_Project_Group_2 ](https://github.com/z-uza/CFG_Final_Project_Group_2)
@@ -36,7 +37,7 @@ For future releases, we will add the following new features:
 3.	From your command terminal, locate the pathway to the project folder, once inside 'group-app' install React requirements by running node.js using these command prompts: **npm install** followed by **npm start**
 > [!IMPORTANT]
 > Ensure the Express server is booted up by running **node server.js** in the project's terminal. If successful, you should see _Example app listening at http://localhost:5000_ in the console. Without this, the application will not run as intended.
-5.	In your web browser locate the tab with the React logo and check that page is running from **localhost:3000** which should displayed in the web app address bar, the contents of the Home page of the Web App 'Fun 4 All' should be displayed.
+5.	With the express server running successfully, in your web browser locate the tab with the React logo and check that page is running from **localhost:3000** which should be displayed in the web app address bar. The contents of the Home page of the Web App 'Fun 4 All' should then be displayed.
 6. The Web App can be navigated by using the nav bar and buttons on the home page.
 7. The code files for the App can be accessed via the _backend_ and _group-add_ folders in the repo.
 
@@ -51,8 +52,9 @@ The App has the following functionality:
 
 ## Summary of design principles and testing
 
-The App was designed for ease of use and to provide the user with simple intuitive user friendly interface. Users are able to navigate through the web app via the nav bar buttons which displays three pages: Home, About, Favourites. From the Home page there is a button to take the user to a Theme Park Page and also from the Home page there is a button to take the user to the Theme Park Accessibility Page, so there are five pages in total.
-Testing has allowed us to improve the user experience. For example, we have included test files within the 'group-app' folder to test various components, such as testing accessibility button name is correctly displayed and that the navigation bar's routing works as expected. 
+The App was designed for ease of use and to provide the user with simple intuitive user friendly interface. Users are able to navigate through the web app via the nav bar buttons which displays three pages: Home, About, Favourites. From the Home page there is a button to take the user to a Theme Park Page and also from the Home page there is a button to take the user to the Theme Park Accessibility Page, so there are five pages in total. When the user is not on the homepage, the 'Home' button shows on the nav bar, allowing the user to navigate back to the homepage with ease.
+
+Testing has also allowed us to improve the user experience. For example, we have included test files within the 'group-app' components folder to test various components, such as testing accessibility button name is correctly displayed and that the navigation bar's routing works as expected. 
 
 ## Credits
 ### Full Stack Pathway Group 2 members :woman_technologist:
@@ -72,7 +74,13 @@ Previous CFG Projects:
 * I am a career-switcher with a background in digital marketing who is looking to channel my analytical and creative problem-solving abilities into the exciting world of tech. Currently enrolled in the CFG Full Stack degree, I am acquiring foundational skills across wide range of technologies which I hope will propell me to a successful career within such a dynamic field. 
 
 **[Warda Egal](https://github.com/wardanot)**
-* Having been a QA Engineer for three years now, I love nothing more than being on the other side of the code and understanding how all the systems and applications I test come together. I come from a natural sciences educational background but have tried to nurture my passion for coding through self-learning and taking courses to help me on my journey to becoming a software developer such as the CFG Introduction to Web Development course where I was given a special award for my outstanding final project created using HTML, CSS and Bootstrap and now partaking in the full stack stream of the CFG Degree. 
+* Having been a QA Engineer for three years now, I love nothing more than being on the other side of the code and understanding how all the systems and applications I test come together. I come from a natural sciences educational background but have tried to nurture my passion for coding through self-learning and taking courses to help me on my journey to becoming a software developer such as the CFG Introduction to Web Development course where I was given a special award for my outstanding final project created using HTML, CSS and Bootstrap and now partaking in the full stack stream of the CFG Degree.
+
+**[Sarah Pascoe](https://github.com/SarahBethan)**
+* I am a recent History graduate with a background in archival work and museum curation, now eager to pivot into the tech industry. Currently, I am working pursuing the Code First Girls Full Stack Degree, building on the foundation I established with their Introduction to Coding course. My journey into tech has been fueled by continuos self-directed learning, and I am excited to integrate my new coding skills and unique perspective into this field.
+
+**[Zuzanna Wnekowska](https://github.com/z-uza)**
+* I'm an aero engineer switching to tech. I've been dabbling in design and coding for a long time and am excited to finally do a bootcamp. I learn by doing so building projects has been the perfect way to learn!.
 
 ### References
 We are grateful to the following people / organisations for their tuition, resources and guidance. Without them, this project would not be possible.

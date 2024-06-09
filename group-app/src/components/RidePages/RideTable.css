@@ -1,11 +1,17 @@
 .ride-table-container {
-    width: 100%; /* Ensure table container uses full width */
-    margin: 0 auto; /* Center the table container */
-  }
+    width: 100%; 
+    margin: 0 auto; 
+}
   
-  .ride-rows th, .ride-rows td {
+.ride-rows th, .ride-rows td {
     padding: 10px;
     font-weight: bold;
-  }
-  
- 
+}
+
+.ridesList {
+  color: black;
+  margin-bottom: 20px;
+  background-color: #F9D949;
+  padding: 20px;
+  border-radius: 10px;
+}

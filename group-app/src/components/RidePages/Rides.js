@@ -86,7 +86,7 @@ const ThemeParks = () => {
       <h1>{themePark.charAt(0).toUpperCase() + themePark.slice(1)} Wait Times</h1>
       <div className="content">
         <div className="ride-table">
-          <RideTable rides={waitTimes} addToFavourites={addToFavourites} />
+          <RideTable rides={waitTimes} addToFavourites={addToFavourites} themePark={themePark} />
         </div>
       </div>
     </div>
