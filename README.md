@@ -63,13 +63,6 @@ This team project is a collaboration between six developers:
 **[Majella O'Mahony](https://github.com/MadgeMom)**
 * Currently on the Full Stack Pathway of a Nano Degree with Code First Girls.  I have a teaching background in Education and I Mentor and coach autistic adults and adults with ADHD. What inspired me to learn computer languages...? When I was a teacher I discovered that creating coding projects were the highlight of my week and also my students.  I want to turn a fun hobby into a full-time job!
 
-Previous CFG Projects:
-- Designed and created an interactive web application using HTML, CSS and Javascript
-- Created an interactive web application with a suite of interactive productivity tools using HTML, CSS and Javascript
-- Create a console app in Python to interact with an API to obtain Data and transform Data for impact
-- Designed and built a relational database, with complex queries, in-built functions, joins, stored procedures and to handle specific complex Data requirements
-- created an interactive App using HTTP requests and internal API to support fictional business
-
 **[Beth Hopla](https://github.com/bhpla9)**
 * I am a career-switcher with a background in digital marketing who is looking to channel my analytical and creative problem-solving abilities into the exciting world of tech. Currently enrolled in the CFG Full Stack degree, I am acquiring foundational skills across wide range of technologies which I hope will propell me to a successful career within such a dynamic field. 
 
@@ -81,6 +74,13 @@ Previous CFG Projects:
 
 **[Zuzanna Wnekowska](https://github.com/z-uza)**
 * I'm an aero engineer switching to tech. I've been dabbling in design and coding for a long time and am excited to finally do a bootcamp. I learn by doing so building projects has been the perfect way to learn!.
+
+**Previous CFG Projects:**
+- Designed and created an interactive web application using HTML, CSS and Javascript
+- Created an interactive web application with a suite of interactive productivity tools using HTML, CSS and Javascript
+- Create a console app in Python to interact with an API to obtain Data and transform Data for impact
+- Designed and built a relational database, with complex queries, in-built functions, joins, stored procedures and to handle specific complex Data requirements
+- created an interactive App using HTTP requests and internal API to support fictional business
 
 ### References
 We are grateful to the following people / organisations for their tuition, resources and guidance. Without them, this project would not be possible.
