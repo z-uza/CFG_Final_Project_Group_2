@@ -37,9 +37,7 @@ test('fetches and displays theme parks', async () => {
 
   expect(screen.getByText('Legoland Wait Times')).toBeInTheDocument();
 
-  // await waitFor(() => {
-  //   expect(screen.getByText('Mocked RidesTable')).toBeInTheDocument();
-  // });
+  
 
   expect(fetch).toHaveBeenCalledWith('http://localhost:5000/get-rides?id=1');
 });
