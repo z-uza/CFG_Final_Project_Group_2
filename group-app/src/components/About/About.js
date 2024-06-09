@@ -4,7 +4,7 @@ import MajellaImage from '../../assets/Team Images/Majella.png';
 import BronwenImage from '../../assets/Team Images/Bronwen.png';
 import ZuzaImage from '../../assets/Team Images/Zuza.png';
 import WardaImage from '../../assets/Team Images/Warda.jpg';
-import SarahImage from '../../assets/Team Images/Sarah.jpg';
+import SarahImage from '../../assets/Team Images/Sarah.JPG';
 import TeamCards from './TeamCards';
 import './About.css';
 
