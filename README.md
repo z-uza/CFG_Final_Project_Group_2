@@ -36,7 +36,7 @@ For future releases, we will add the following new features:
 2.	Open the project folder 'group app' in Visual Studio Code
 3.	From your command terminal, locate the pathway to the project folder, once inside 'group-app' install React requirements by running node.js using these command prompts: **npm install** followed by **npm start**
 > [!IMPORTANT]
-> Ensure the Express server is booted up by running **node server.js** in the project's backend folder terminal. If successful, you should see _Example app listening at http://localhost:5000_ in the console. Without this, the application will not run as intended.
+> Ensure Express is installed by running **npm install express** and ensure the server is booted up by running **node server.js** in the project's backend folder terminal. If successful, you should see _Example app listening at http://localhost:5000_ in the console. Without this, the application will not run as intended.
 5.	With the express server running successfully, in your web browser locate the tab with the React logo and check that page is running from **localhost:3000** which should be displayed in the web app address bar. The contents of the Home page of the Web App 'Fun 4 All' should then be displayed.
 6. The Web App can be navigated by using the nav bar and buttons on the home page.
 7. The code files for the App can be accessed via the _backend_ and _group-add_ folders in the repo.
